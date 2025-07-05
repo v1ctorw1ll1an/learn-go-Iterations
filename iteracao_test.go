@@ -1,7 +1,6 @@
-package iteracaco
+package iteracao
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -20,9 +19,4 @@ func BenchmarkIteracao(b *testing.B) {
 	for b.Loop() {
 		Repeat("a", 10)
 	}
-}
-
-func ExampleRepeat() {
-	fmt.Println(Repeat("a", 10))
-	// Output: aaaaaaaaaa
 }
